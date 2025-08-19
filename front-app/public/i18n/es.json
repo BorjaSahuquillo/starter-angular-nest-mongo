@@ -1,0 +1,196 @@
+{
+  "LOGIN": {
+    "HEADER": {
+      "TITLE": "Iniciar Sesión",
+      "SUBTITLE": "Bienvenido de vuelta"
+    },
+    "FORM": {
+      "EMAIL": "Email",
+      "PASSWORD": "Contraseña",
+      "REMEMBER_ME": "Recordarme",
+      "FORGOT_PASSWORD": "¿Olvidaste tu contraseña?",
+      "SUBMIT_BUTTON": "Iniciar Sesión",
+      "DIVIDER": "O",
+      "GOOGLE_BUTTON": "Continuar con Google",
+      "GOOGLE_BUTTON_ALT": "Continuar con Google (Alternativo)"
+    },
+    "SIGNUP": {
+      "TEXT": "¿No tienes una cuenta?",
+      "LINK": "Regístrate aquí"
+    },
+    "VALIDATION": {
+      "EMAIL_REQUIRED": "El email es requerido",
+      "EMAIL_INVALID": "El email no es válido",
+      "PASSWORD_REQUIRED": "La contraseña es requerida",
+      "PASSWORD_MIN_LENGTH": "La contraseña debe tener al menos 6 caracteres"
+    },
+    "MESSAGES": {
+      "WELCOME": "¡Bienvenido!",
+      "LOGIN_SUCCESS": "Has iniciado sesión correctamente",
+      "GOOGLE_LOGIN_SUCCESS": "Hola {name}, has iniciado sesión correctamente",
+      "AUTH_ERROR": "Error de autenticación",
+      "INVALID_CREDENTIALS": "Credenciales inválidas. Por favor, verifica tu email y contraseña",
+      "CONFIG_ERROR": "Error de configuración",
+      "GOOGLE_OAUTH_INIT_ERROR": "No se pudo inicializar Google OAuth. Por favor, inténtalo más tarde",
+      "GOOGLE_OAUTH_ERROR": "Error de Google OAuth",
+      "GOOGLE_OAUTH_START_ERROR": "No se pudo iniciar el proceso de autenticación con Google",
+      "GOOGLE_AUTH_COMPLETE_ERROR": "No se pudo completar la autenticación con Google"
+    }
+  },
+  "REGISTER": {
+    "HEADER": {
+      "TITLE": "Crear Cuenta",
+      "SUBTITLE": "Únete a nosotros hoy"
+    },
+    "FORM": {
+      "NAME": "Nombre Completo",
+      "EMAIL": "Email",
+      "PASSWORD": "Contraseña",
+      "CONFIRM_PASSWORD": "Confirmar Contraseña",
+      "ACCEPT_TERMS_START": "Acepto los",
+      "TERMS_LINK": "Términos de Servicio",
+      "ACCEPT_TERMS_AND": "y la",
+      "PRIVACY_LINK": "Política de Privacidad",
+      "SUBMIT_BUTTON": "Crear Cuenta",
+      "DIVIDER": "O",
+      "GOOGLE_BUTTON": "Registrarse con Google",
+      "GOOGLE_BUTTON_ALT": "Registrarse con Google (Alternativo)"
+    },
+    "LOGIN": {
+      "TEXT": "¿Ya tienes una cuenta?",
+      "LINK": "Inicia sesión aquí"
+    },
+    "VALIDATION": {
+      "NAME_REQUIRED": "El nombre es requerido",
+      "NAME_MIN_LENGTH": "El nombre debe tener al menos 2 caracteres",
+      "EMAIL_REQUIRED": "El email es requerido",
+      "EMAIL_INVALID": "El email no es válido",
+      "PASSWORD_REQUIRED": "La contraseña es requerida",
+      "PASSWORD_MIN_LENGTH": "La contraseña debe tener al menos 6 caracteres",
+      "CONFIRM_PASSWORD_REQUIRED": "Confirma tu contraseña",
+      "PASSWORDS_MISMATCH": "Las contraseñas no coinciden",
+      "TERMS_REQUIRED": "Debes aceptar los términos y condiciones"
+    },
+    "MESSAGES": {
+      "SUCCESS": "Registro exitoso",
+      "ACCOUNT_CREATED": "Cuenta creada exitosamente",
+      "REGISTRATION_FAILED": "Error al registrar",
+      "REGISTRATION_FAILED_DETAIL": "Error al registrar. Inténtalo de nuevo",
+      "VALIDATION_ERROR": "Error de validación",
+      "CONFIG_ERROR": "Error de configuración",
+      "GOOGLE_OAUTH_INIT_ERROR": "No se pudo inicializar Google OAuth. Por favor, inténtalo más tarde",
+      "GOOGLE_REGISTRATION_SUCCESS": "Registro exitoso",
+      "GOOGLE_ACCOUNT_CREATED": "Cuenta creada con Google",
+      "GOOGLE_REGISTRATION_FAILED": "Error al registrar con Google",
+      "GOOGLE_REGISTRATION_FAILED_DETAIL": "Error al registrar con Google"
+    }
+  },
+  "DASHBOARD": {
+    "TITLE": "¡Bienvenido al Dashboard!",
+    "SUBTITLE": "Has iniciado sesión correctamente",
+    "THEME": {
+      "LIGHT_MODE": "Forzar Modo Claro",
+      "DARK_MODE": "Forzar Modo Oscuro",
+      "AUTO_MODE": "Tema Automático (Sistema)"
+    },
+    "USER_INFO": {
+      "TITLE": "Información del usuario:",
+      "NAME": "Nombre:",
+      "EMAIL": "Email:",
+      "INITIALS": "Iniciales:"
+    },
+    "ACTIONS": {
+      "LOGOUT": "Cerrar Sesión"
+    },
+    "MESSAGES": {
+      "LOGOUT_SUCCESS": "Sesión cerrada correctamente",
+      "LOGOUT_ERROR": "Error al cerrar sesión"
+    }
+  },
+  "COMMON": {
+    "BUTTONS": {
+      "CANCEL": "Cancelar",
+      "SAVE": "Guardar",
+      "DELETE": "Eliminar",
+      "EDIT": "Editar",
+      "CREATE": "Crear",
+      "UPDATE": "Actualizar",
+      "CONFIRM": "Confirmar",
+      "CLOSE": "Cerrar",
+      "BACK": "Volver",
+      "NEXT": "Siguiente",
+      "PREVIOUS": "Anterior",
+      "SUBMIT": "Enviar",
+      "RESET": "Resetear"
+    },
+    "VALIDATION": {
+      "REQUIRED": "Este campo es requerido",
+      "MIN_LENGTH": "Mínimo {{min}} caracteres",
+      "MAX_LENGTH": "Máximo {{max}} caracteres",
+      "EMAIL_INVALID": "Email no válido",
+      "PATTERN_INVALID": "Formato no válido",
+      "NUMBER_INVALID": "Debe ser un número",
+      "DATE_INVALID": "Fecha no válida"
+    },
+    "MESSAGES": {
+      "SUCCESS": "Operación exitosa",
+      "ERROR": "Ha ocurrido un error",
+      "WARNING": "Advertencia",
+      "INFO": "Información",
+      "LOADING": "Cargando...",
+      "NO_DATA": "No hay datos disponibles",
+      "CONFIRM_DELETE": "¿Estás seguro de que deseas eliminar este elemento?",
+      "UNSAVED_CHANGES": "Tienes cambios sin guardar. ¿Deseas continuar?"
+    },
+    "NAVIGATION": {
+      "HOME": "Inicio",
+      "DASHBOARD": "Dashboard",
+      "PROFILE": "Perfil",
+      "SETTINGS": "Configuración",
+      "HELP": "Ayuda",
+      "ABOUT": "Acerca de"
+    }
+  },
+  "ERRORS": {
+    "ACCESS_DENIED": "Acceso denegado",
+    "ACCESS_DENIED_DETAIL": "No tienes permisos para acceder a este recurso",
+    "RESOURCE_NOT_FOUND": "Recurso no encontrado",
+    "RESOURCE_NOT_FOUND_DETAIL": "El recurso solicitado no existe",
+    "VALIDATION_ERROR": "Error de validación",
+    "VALIDATION_ERROR_DETAIL": "Los datos proporcionados no son válidos",
+    "SERVER_ERROR": "Error del servidor",
+    "SERVER_ERROR_DETAIL": "Ha ocurrido un error en el servidor. Inténtalo más tarde",
+    "NO_CONNECTION": "Sin conexión",
+    "NO_CONNECTION_DETAIL": "No hay conexión a internet. Verifica tu conexión",
+    "NETWORK_ERROR": "Error de red",
+    "NETWORK_ERROR_DETAIL": "Error de conexión. Inténtalo de nuevo",
+    "UNEXPECTED_ERROR": "Error inesperado",
+    "UNEXPECTED_ERROR_DETAIL": "Ha ocurrido un error inesperado",
+    "SESSION_EXPIRED": "Sesión expirada",
+    "SESSION_EXPIRED_DETAIL": "Su sesión ha expirado. Por favor, inicie sesión de nuevo",
+    "GENERAL": {
+      "UNKNOWN": "Error desconocido",
+      "NETWORK": "Error de conexión",
+      "SERVER": "Error del servidor",
+      "UNAUTHORIZED": "No autorizado",
+      "FORBIDDEN": "Acceso denegado",
+      "NOT_FOUND": "No encontrado",
+      "TIMEOUT": "Tiempo de espera agotado"
+    },
+    "AUTH": {
+      "INVALID_TOKEN": "Token inválido",
+      "EXPIRED_TOKEN": "Token expirado",
+      "REFRESH_FAILED": "Error al renovar la sesión",
+      "LOGIN_REQUIRED": "Debes iniciar sesión"
+    }
+  },
+  "THEME": {
+    "TOGGLE": "Cambiar tema",
+    "LIGHT": "Tema claro",
+    "DARK": "Tema oscuro",
+    "SYSTEM": "Tema del sistema",
+    "SWITCH_TO_LIGHT": "Cambiar a tema claro",
+    "SWITCH_TO_DARK": "Cambiar a tema oscuro",
+    "SWITCH_TO_SYSTEM": "Usar tema del sistema"
+  }
+}

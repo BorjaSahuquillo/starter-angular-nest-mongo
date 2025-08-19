@@ -1,0 +1,199 @@
+# project-base-ng-nest
+
+# =============================================================================
+# NODE_MODULES - BLOQUEADO COMPLETAMENTE
+# =============================================================================
+
+# Node modules en cualquier nivel (Windows compatible)
+node_modules/
+**/node_modules/
+**/node_modules\*
+**/node_modules/*
+**/node_modules\**
+
+# =============================================================================
+# ARCHIVOS DE BUILD Y COMPILACIÓN
+# =============================================================================
+
+# Dist y build en cualquier nivel
+dist/
+**/dist/
+**/dist\*
+**/dist/*
+build/
+**/build/
+**/build\*
+**/build/*
+
+# Angular específico
+.angular/
+**/.angular/
+**/.angular\*
+**/.angular/*
+**/.angular\**
+
+# Otros directorios de build
+tmp/
+**/tmp/
+temp/
+**/temp/
+out-tsc/
+**/out-tsc/
+bazel-out/
+**/bazel-out/
+
+# =============================================================================
+# CACHE Y ARCHIVOS TEMPORALES
+# =============================================================================
+
+# Cache general
+.cache/
+**/.cache/
+**/.cache\*
+**/.cache/*
+.sass-cache/
+**/.sass-cache/
+**/.sass-cache\*
+**/.sass-cache/*
+
+# =============================================================================
+# LOGS Y REPORTES
+# =============================================================================
+
+# Logs en cualquier nivel
+*.log
+**/*.log
+logs/
+**/logs/
+**/logs\*
+**/logs/*
+
+# =============================================================================
+# VARIABLES DE ENTORNO
+# =============================================================================
+
+# Variables de entorno en cualquier nivel
+.env
+**/.env
+**/.env\*
+**/.env/*
+.env.local
+**/.env.local
+.env.development.local
+**/.env.development.local
+.env.test.local
+**/.env.test.local
+.env.production.local
+**/.env.production.local
+
+# =============================================================================
+# IDEs Y EDITORES
+# =============================================================================
+
+# VSCode en cualquier nivel
+.vscode/
+**/.vscode/
+**/.vscode\*
+**/.vscode/*
+
+# Otros IDEs
+.idea/
+**/.idea/
+**/.idea\*
+**/.idea/*
+.project
+**/.project
+.classpath
+**/.classpath
+.c9/
+**/.c9/
+*.launch
+**/*.launch
+.settings/
+**/.settings/
+**/.settings\*
+**/.settings/*
+*.sublime-workspace
+**/*.sublime-workspace
+
+# =============================================================================
+# SISTEMA OPERATIVO
+# =============================================================================
+
+# Windows
+Thumbs.db
+**/Thumbs.db
+ehthumbs.db
+**/ehthumbs.db
+
+# macOS
+.DS_Store
+**/.DS_Store
+**/.DS_Store?
+**/._*
+**/.Spotlight-V100
+**/.Trashes
+
+# =============================================================================
+# ARCHIVOS TEMPORALES
+# =============================================================================
+
+# Archivos temporales en cualquier nivel
+*.tmp
+**/*.tmp
+*.temp
+**/*.temp
+*.swp
+**/*.swp
+*.swo
+**/*.swo
+*~
+**/*~
+
+# =============================================================================
+# COBERTURA DE TESTS
+# =============================================================================
+
+# Coverage en cualquier nivel
+coverage/
+**/coverage/
+**/coverage\*
+**/coverage/*
+*.lcov
+**/*.lcov
+.nyc_output
+**/.nyc_output
+
+# =============================================================================
+# TYPESCRIPT
+# =============================================================================
+
+# TypeScript build info
+*.tsbuildinfo
+**/*.tsbuildinfo
+
+# =============================================================================
+# OTROS
+# =============================================================================
+
+# NPM y otros
+.npm
+**/.npm
+**/.npm\*
+**/.npm/*
+.eslintcache
+**/.eslintcache
+**/.eslintcache\*
+**/.eslintcache/*
+.parcel-cache
+**/.parcel-cache
+**/.parcel-cache\*
+**/.parcel-cache/*
+
+# Lock files
+package-lock.json
+**/package-lock.json
+yarn.lock
+**/yarn.lock
+pnpm-lock.yaml
+**/pnpm-lock.yaml

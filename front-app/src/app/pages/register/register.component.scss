@@ -1,0 +1,214 @@
+@use "../../../styles/background-styles.scss";
+
+// Register container - full screen centered layout
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    var(--p-surface-0) 0%,
+    var(--p-surface-50) 100%
+  );
+  padding: 1rem;
+
+  // 🌊 Aplicar sistema de background completo con orbs
+  @include background-styles.full-page-background(
+    $include-orbs: true,
+    // Orbs completos en register
+    $orb-count: 8,
+    $show-grid: true
+  );
+}
+
+.register-wrapper {
+  width: 100%;
+  max-width: 28rem;
+  position: relative;
+  z-index: 10;
+}
+
+.register-card-container {
+  .register-card {
+    background: var(--p-surface-0);
+    border-radius: 12px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--p-surface-border);
+
+    ::ng-deep .p-card-body {
+      padding: 2rem;
+    }
+  }
+}
+
+// Header section
+.register-header {
+  text-align: center;
+  margin-bottom: 2rem;
+
+  .register-logo {
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+    border-radius: 0.75rem;
+    object-fit: cover;
+  }
+
+  .register-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--p-text-color);
+    margin: 0 0 0.5rem 0;
+    line-height: 1.2;
+  }
+
+  .register-subtitle {
+    font-size: 0.875rem;
+    color: var(--p-text-muted-color);
+    margin: 0;
+    line-height: 1.4;
+  }
+}
+
+// Form section
+.register-form {
+  .register-form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .register-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .register-input {
+      width: 100%;
+
+      ::ng-deep input {
+        width: 100%;
+      }
+
+      &.ng-invalid.ng-touched {
+        ::ng-deep input {
+          border-color: var(--p-red-500);
+        }
+      }
+    }
+
+    // Estilos para tooltip de errores
+    ::ng-deep .p-tooltip .p-tooltip-text {
+      background-color: var(--p-red-500);
+      color: white;
+      font-size: 0.875rem;
+      border-radius: 6px;
+      padding: 0.5rem 0.75rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    ::ng-deep .p-tooltip .p-tooltip-arrow {
+      border-top-color: var(--p-red-500);
+    }
+  }
+
+  // Terms checkbox
+  .register-terms {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-top: 1rem;
+
+    .register-terms-label {
+      font-size: 0.875rem;
+      color: var(--p-text-muted-color);
+      line-height: 1.4;
+      flex: 1;
+
+      .register-terms-link {
+        color: var(--p-primary-color);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: var(--p-primary-600);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .register-actions {
+    margin-top: 2rem;
+
+    .register-submit-button {
+      ::ng-deep .p-button {
+        width: 100%;
+        padding: 0.75rem;
+        font-weight: 600;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+// Responsive adjustments (solo para elementos específicos de register)
+@media (max-width: 640px) {
+  .register-container {
+    padding: 0.5rem;
+  }
+
+  .register-card-container {
+    .register-card ::ng-deep .p-card-body {
+      padding: 1.5rem;
+    }
+  }
+
+  .register-header {
+    margin-bottom: 1.5rem;
+
+    .register-title {
+      font-size: 1.5rem;
+    }
+
+    .register-logo {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+  .register-form .register-form-fields {
+    gap: 1.25rem;
+  }
+}
+
+// Ya no necesitamos estilos específicos para dark mode
+// PrimeNG maneja automáticamente el cambio de variables CSS
+
+// Register login link
+.register-login {
+  text-align: center;
+  padding-top: 0.5rem;
+
+  .register-login-text {
+    font-size: 0.875rem;
+    color: var(--p-text-muted-color);
+    margin: 0;
+
+    .register-login-link {
+      color: var(--p-primary-color);
+      text-decoration: none;
+      font-weight: 600;
+      margin-left: 0.25rem;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: var(--p-primary-600);
+        text-decoration: underline;
+      }
+    }
+  }
+}

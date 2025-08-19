@@ -1,0 +1,196 @@
+{
+  "LOGIN": {
+    "HEADER": {
+      "TITLE": "Sign In",
+      "SUBTITLE": "Welcome back"
+    },
+    "FORM": {
+      "EMAIL": "Email",
+      "PASSWORD": "Password",
+      "REMEMBER_ME": "Remember me",
+      "FORGOT_PASSWORD": "Forgot your password?",
+      "SUBMIT_BUTTON": "Sign In",
+      "DIVIDER": "OR",
+      "GOOGLE_BUTTON": "Continue with Google",
+      "GOOGLE_BUTTON_ALT": "Continue with Google (Alternative)"
+    },
+    "SIGNUP": {
+      "TEXT": "Don't have an account?",
+      "LINK": "Sign up here"
+    },
+    "VALIDATION": {
+      "EMAIL_REQUIRED": "Email is required",
+      "EMAIL_INVALID": "Email is not valid",
+      "PASSWORD_REQUIRED": "Password is required",
+      "PASSWORD_MIN_LENGTH": "Password must be at least 6 characters"
+    },
+    "MESSAGES": {
+      "WELCOME": "Welcome!",
+      "LOGIN_SUCCESS": "You have successfully logged in",
+      "GOOGLE_LOGIN_SUCCESS": "Hello {name}, you have successfully logged in",
+      "AUTH_ERROR": "Authentication error",
+      "INVALID_CREDENTIALS": "Invalid credentials. Please verify your email and password",
+      "CONFIG_ERROR": "Configuration error",
+      "GOOGLE_OAUTH_INIT_ERROR": "Could not initialize Google OAuth. Please try again later",
+      "GOOGLE_OAUTH_ERROR": "Google OAuth error",
+      "GOOGLE_OAUTH_START_ERROR": "Could not start Google authentication process",
+      "GOOGLE_AUTH_COMPLETE_ERROR": "Could not complete Google authentication"
+    }
+  },
+  "REGISTER": {
+    "HEADER": {
+      "TITLE": "Create Account",
+      "SUBTITLE": "Join us today"
+    },
+    "FORM": {
+      "NAME": "Full Name",
+      "EMAIL": "Email",
+      "PASSWORD": "Password",
+      "CONFIRM_PASSWORD": "Confirm Password",
+      "ACCEPT_TERMS_START": "I accept the",
+      "TERMS_LINK": "Terms of Service",
+      "ACCEPT_TERMS_AND": "and",
+      "PRIVACY_LINK": "Privacy Policy",
+      "SUBMIT_BUTTON": "Create Account",
+      "DIVIDER": "OR",
+      "GOOGLE_BUTTON": "Sign up with Google",
+      "GOOGLE_BUTTON_ALT": "Sign up with Google (Alternative)"
+    },
+    "LOGIN": {
+      "TEXT": "Already have an account?",
+      "LINK": "Sign in here"
+    },
+    "VALIDATION": {
+      "NAME_REQUIRED": "Name is required",
+      "NAME_MIN_LENGTH": "Name must be at least 2 characters",
+      "EMAIL_REQUIRED": "Email is required",
+      "EMAIL_INVALID": "Email is not valid",
+      "PASSWORD_REQUIRED": "Password is required",
+      "PASSWORD_MIN_LENGTH": "Password must be at least 6 characters",
+      "CONFIRM_PASSWORD_REQUIRED": "Please confirm your password",
+      "PASSWORDS_MISMATCH": "Passwords do not match",
+      "TERMS_REQUIRED": "You must accept the terms and conditions"
+    },
+    "MESSAGES": {
+      "SUCCESS": "Registration successful",
+      "ACCOUNT_CREATED": "Account created successfully",
+      "REGISTRATION_FAILED": "Registration failed",
+      "REGISTRATION_FAILED_DETAIL": "Registration failed. Please try again",
+      "VALIDATION_ERROR": "Validation error",
+      "CONFIG_ERROR": "Configuration error",
+      "GOOGLE_OAUTH_INIT_ERROR": "Could not initialize Google OAuth. Please try again later",
+      "GOOGLE_REGISTRATION_SUCCESS": "Registration successful",
+      "GOOGLE_ACCOUNT_CREATED": "Account created with Google",
+      "GOOGLE_REGISTRATION_FAILED": "Google registration failed",
+      "GOOGLE_REGISTRATION_FAILED_DETAIL": "Failed to register with Google"
+    }
+  },
+  "DASHBOARD": {
+    "TITLE": "Welcome to Dashboard!",
+    "SUBTITLE": "You have successfully logged in",
+    "THEME": {
+      "LIGHT_MODE": "Force Light Mode",
+      "DARK_MODE": "Force Dark Mode",
+      "AUTO_MODE": "Auto Theme (System)"
+    },
+    "USER_INFO": {
+      "TITLE": "User information:",
+      "NAME": "Name:",
+      "EMAIL": "Email:",
+      "INITIALS": "Initials:"
+    },
+    "ACTIONS": {
+      "LOGOUT": "Sign Out"
+    },
+    "MESSAGES": {
+      "LOGOUT_SUCCESS": "Successfully signed out",
+      "LOGOUT_ERROR": "Error signing out"
+    }
+  },
+  "COMMON": {
+    "BUTTONS": {
+      "CANCEL": "Cancel",
+      "SAVE": "Save",
+      "DELETE": "Delete",
+      "EDIT": "Edit",
+      "CREATE": "Create",
+      "UPDATE": "Update",
+      "CONFIRM": "Confirm",
+      "CLOSE": "Close",
+      "BACK": "Back",
+      "NEXT": "Next",
+      "PREVIOUS": "Previous",
+      "SUBMIT": "Submit",
+      "RESET": "Reset"
+    },
+    "VALIDATION": {
+      "REQUIRED": "This field is required",
+      "MIN_LENGTH": "Minimum {{min}} characters",
+      "MAX_LENGTH": "Maximum {{max}} characters",
+      "EMAIL_INVALID": "Invalid email",
+      "PATTERN_INVALID": "Invalid format",
+      "NUMBER_INVALID": "Must be a number",
+      "DATE_INVALID": "Invalid date"
+    },
+    "MESSAGES": {
+      "SUCCESS": "Operation successful",
+      "ERROR": "An error occurred",
+      "WARNING": "Warning",
+      "INFO": "Information",
+      "LOADING": "Loading...",
+      "NO_DATA": "No data available",
+      "CONFIRM_DELETE": "Are you sure you want to delete this item?",
+      "UNSAVED_CHANGES": "You have unsaved changes. Do you want to continue?"
+    },
+    "NAVIGATION": {
+      "HOME": "Home",
+      "DASHBOARD": "Dashboard",
+      "PROFILE": "Profile",
+      "SETTINGS": "Settings",
+      "HELP": "Help",
+      "ABOUT": "About"
+    }
+  },
+  "ERRORS": {
+    "ACCESS_DENIED": "Access denied",
+    "ACCESS_DENIED_DETAIL": "You don't have permission to access this resource",
+    "RESOURCE_NOT_FOUND": "Resource not found",
+    "RESOURCE_NOT_FOUND_DETAIL": "The requested resource does not exist",
+    "VALIDATION_ERROR": "Validation error",
+    "VALIDATION_ERROR_DETAIL": "The provided data is not valid",
+    "SERVER_ERROR": "Server error",
+    "SERVER_ERROR_DETAIL": "A server error occurred. Please try again later",
+    "NO_CONNECTION": "No connection",
+    "NO_CONNECTION_DETAIL": "No internet connection. Check your connection",
+    "NETWORK_ERROR": "Network error",
+    "NETWORK_ERROR_DETAIL": "Connection error. Please try again",
+    "UNEXPECTED_ERROR": "Unexpected error",
+    "UNEXPECTED_ERROR_DETAIL": "An unexpected error occurred",
+    "SESSION_EXPIRED": "Session expired",
+    "SESSION_EXPIRED_DETAIL": "Your session has expired. Please log in again",
+    "GENERAL": {
+      "UNKNOWN": "Unknown error",
+      "NETWORK": "Network error",
+      "SERVER": "Server error",
+      "UNAUTHORIZED": "Unauthorized",
+      "FORBIDDEN": "Access denied",
+      "NOT_FOUND": "Not found",
+      "TIMEOUT": "Timeout"
+    },
+    "AUTH": {
+      "INVALID_TOKEN": "Invalid token",
+      "EXPIRED_TOKEN": "Expired token",
+      "REFRESH_FAILED": "Failed to refresh session",
+      "LOGIN_REQUIRED": "You must sign in"
+    }
+  },
+  "THEME": {
+    "TOGGLE": "Toggle theme",
+    "LIGHT": "Light theme",
+    "DARK": "Dark theme",
+    "SYSTEM": "System theme",
+    "SWITCH_TO_LIGHT": "Switch to light theme",
+    "SWITCH_TO_DARK": "Switch to dark theme",
+    "SWITCH_TO_SYSTEM": "Use system theme"
+  }
+}

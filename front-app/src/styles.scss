@@ -1,0 +1,17 @@
+/* Import Tailwind CSS */
+
+@use "tailwindcss";
+@use "primeicons/primeicons.css";
+
+/* 🎨 Custom Background Styles */
+@use "./styles/background-styles.scss";
+/* 🎨 Custom Toast Styles importados AL FINAL para mayor prioridad */
+@use "./styles/toast-custom.scss";
+
+@plugin "tailwindcss-primeui";
+
+// Global background que se adapta automáticamente
+body {
+  background: var(--p-surface-0);
+  min-height: 100vh;
+}

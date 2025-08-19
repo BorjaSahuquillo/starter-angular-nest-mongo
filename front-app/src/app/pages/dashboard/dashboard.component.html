@@ -1,0 +1,46 @@
+<div class="dashboard-wrapper">
+  <!-- 🌊 Background generado automáticamente por SCSS mixins -->
+  <div class="wave-background">
+    <div class="gradient-wave wave-1"></div>
+    <div class="gradient-wave wave-2"></div>
+    <div class="gradient-wave wave-3"></div>
+  </div>
+
+  <div class="dashboard-container">
+    <p-card class="dashboard-card">
+      <div class="dashboard-header">
+        <h1>{{ "DASHBOARD.TITLE" | transloco }}</h1>
+
+        <!-- Botón para cambiar tema -->
+        <div class="theme-toggle">
+          <app-theme-switcher></app-theme-switcher>
+        </div>
+        <p>{{ "DASHBOARD.SUBTITLE" | transloco }}</p>
+
+        @if (currentUser) {
+          <div class="user-info">
+            <h3>{{ "DASHBOARD.USER_INFO.TITLE" | transloco }}</h3>
+            <p>
+              <strong>{{ "DASHBOARD.USER_INFO.NAME" | transloco }}</strong>
+              {{ currentUser.getDisplayName() }}
+            </p>
+            <p>
+              <strong>{{ "DASHBOARD.USER_INFO.EMAIL" | transloco }}</strong>
+              {{ currentUser.email }}
+            </p>
+            <p>
+              <strong>{{ "DASHBOARD.USER_INFO.INITIALS" | transloco }}</strong>
+              {{ currentUser.getInitials() }}
+            </p>
+          </div>
+        }
+
+        <p-button
+          [label]="'DASHBOARD.ACTIONS.LOGOUT' | transloco"
+          (onClick)="logout()"
+        >
+        </p-button>
+      </div>
+    </p-card>
+  </div>
+</div>

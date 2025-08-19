@@ -1,0 +1,179 @@
+<div class="register-container">
+  <!-- Toast para notificaciones -->
+  <p-toast position="top-right"></p-toast>
+  <!-- Modern Gradient Wave Background -->
+  <div class="wave-background">
+    <div class="gradient-wave wave-1"></div>
+    <div class="gradient-wave wave-2"></div>
+    <div class="gradient-wave wave-3"></div>
+  </div>
+
+  <!-- Grid Overlay -->
+  <div class="grid-overlay"></div>
+
+  <!-- Floating Orbs Background -->
+  <div class="floating-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="orb orb-4"></div>
+    <div class="orb orb-5"></div>
+    <div class="orb orb-6"></div>
+    <div class="orb orb-7"></div>
+    <div class="orb orb-8"></div>
+  </div>
+
+  <div class="register-wrapper">
+    <div class="register-card-container">
+      <p-card class="register-card">
+        <div class="register-header">
+          <img src="logo.png" alt="Logo" class="register-logo" />
+          <h2 class="register-title">
+            {{ "REGISTER.HEADER.TITLE" | transloco }}
+          </h2>
+          <p class="register-subtitle">
+            {{ "REGISTER.HEADER.SUBTITLE" | transloco }}
+          </p>
+        </div>
+
+        <form
+          [formGroup]="registerForm"
+          (ngSubmit)="register()"
+          class="register-form"
+        >
+          <div class="register-form-fields">
+            <!-- Name Field -->
+            <div class="register-field">
+              <p-floatlabel>
+                <input
+                  pInputText
+                  id="name"
+                  formControlName="name"
+                  [class.ng-invalid]="isFieldInvalid('name')"
+                  class="register-input"
+                  [pTooltip]="
+                    isFieldInvalid('name') ? getFieldError('name') : ''
+                  "
+                  tooltipPosition="top"
+                  [tooltipDisabled]="!isFieldInvalid('name')"
+                />
+                <label for="name">{{ "REGISTER.FORM.NAME" | transloco }}</label>
+              </p-floatlabel>
+            </div>
+
+            <!-- Email Field -->
+            <div class="register-field">
+              <p-floatlabel>
+                <input
+                  pInputText
+                  autocomplete="off"
+                  id="email"
+                  formControlName="email"
+                  [class.ng-invalid]="isFieldInvalid('email')"
+                  class="register-input"
+                  [pTooltip]="
+                    isFieldInvalid('email') ? getFieldError('email') : ''
+                  "
+                  tooltipPosition="top"
+                  [tooltipDisabled]="!isFieldInvalid('email')"
+                />
+                <label for="email">{{
+                  "REGISTER.FORM.EMAIL" | transloco
+                }}</label>
+              </p-floatlabel>
+            </div>
+
+            <!-- Password Field -->
+            <div class="register-field">
+              <p-floatlabel>
+                <p-password
+                  inputId="password"
+                  formControlName="password"
+                  [feedback]="false"
+                  [toggleMask]="true"
+                  [class.ng-invalid]="isFieldInvalid('password')"
+                  class="register-input"
+                  styleClass="w-full"
+                  [pTooltip]="
+                    isFieldInvalid('password') ? getFieldError('password') : ''
+                  "
+                  tooltipPosition="top"
+                  [tooltipDisabled]="!isFieldInvalid('password')"
+                />
+                <label for="password">{{
+                  "REGISTER.FORM.PASSWORD" | transloco
+                }}</label>
+              </p-floatlabel>
+            </div>
+
+            <!-- Confirm Password Field -->
+            <div class="register-field">
+              <p-floatlabel>
+                <p-password
+                  inputId="confirmPassword"
+                  formControlName="confirmPassword"
+                  [feedback]="false"
+                  [toggleMask]="true"
+                  [class.ng-invalid]="isFieldInvalid('confirmPassword')"
+                  class="register-input"
+                  styleClass="w-full"
+                  [pTooltip]="
+                    isFieldInvalid('confirmPassword')
+                      ? getFieldError('confirmPassword')
+                      : ''
+                  "
+                  tooltipPosition="top"
+                  [tooltipDisabled]="!isFieldInvalid('confirmPassword')"
+                />
+                <label for="confirmPassword">{{
+                  "REGISTER.FORM.CONFIRM_PASSWORD" | transloco
+                }}</label>
+              </p-floatlabel>
+            </div>
+
+            <!-- Terms and Privacy -->
+            <div class="register-terms">
+              <p-checkbox
+                inputId="acceptTerms"
+                formControlName="acceptTerms"
+                binary="true"
+              />
+              <label for="acceptTerms" class="register-terms-label">
+                {{ "REGISTER.FORM.ACCEPT_TERMS_START" | transloco }}
+                <a href="#" class="register-terms-link">{{
+                  "REGISTER.FORM.TERMS_LINK" | transloco
+                }}</a>
+                {{ "REGISTER.FORM.ACCEPT_TERMS_AND" | transloco }}
+                <a href="#" class="register-terms-link">{{
+                  "REGISTER.FORM.PRIVACY_LINK" | transloco
+                }}</a>
+              </label>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="register-actions">
+            <p-button
+              type="submit"
+              [label]="'REGISTER.FORM.SUBMIT_BUTTON' | transloco"
+              [loading]="loading()"
+              [disabled]="registerForm.invalid"
+              class="register-submit-button"
+              styleClass="w-full"
+            />
+          </div>
+        </form>
+
+        <!-- Login Link -->
+        <div class="register-login">
+          <p class="register-login-text">
+            {{ "REGISTER.LOGIN.TEXT" | transloco }}
+            <a [routerLink]="['/login']" class="register-login-link">{{
+              "REGISTER.LOGIN.LINK" | transloco
+            }}</a>
+          </p>
+        </div>
+      </p-card>
+    </div>
+  </div>
+</div>
