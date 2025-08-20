@@ -1,16 +1,15 @@
 import { ValidationPipe } from '@nestjs/common';
-import { ConfigService } from '@nestjs/config';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { HttpExceptionFilter } from './common/filters/http-exception.filter';
+import config from './config/config';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  const configService = app.get<ConfigService>(ConfigService);
 
   // Configure CORS
   app.enableCors({
-    origin: configService.get<string>('cors.origin') || 'http://localhost:4200',
+    origin: config().cors.origin,
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
@@ -28,7 +27,7 @@ async function bootstrap() {
   // Configurar filtro de excepciones global
   app.useGlobalFilters(new HttpExceptionFilter());
 
-  const port = configService.get<number>('port') || 3000;
+  const port = config().port;
   await app.listen(port);
 
   console.log(`🚀 Server running on http://localhost:${port}`);

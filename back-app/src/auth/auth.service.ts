@@ -4,11 +4,11 @@ import {
   Injectable,
   UnauthorizedException,
 } from '@nestjs/common';
-import { ConfigService } from '@nestjs/config';
 import { JwtService } from '@nestjs/jwt';
 import * as bcrypt from 'bcryptjs';
 import { OAuth2Client } from 'google-auth-library';
 
+import config from '../config/config';
 import { User } from '../users/schemas/user.schema';
 import { UsersService } from '../users/users.service';
 import {
@@ -27,11 +27,8 @@ export class AuthService {
   constructor(
     private usersService: UsersService,
     private jwtService: JwtService,
-    private configService: ConfigService,
   ) {
-    this.googleClient = new OAuth2Client(
-      this.configService.get<string>('google.clientId'),
-    );
+    this.googleClient = new OAuth2Client(config().google.clientId);
   }
 
   async register(registerDto: RegisterDto): Promise<AuthResponseDto> {
@@ -213,7 +210,7 @@ export class AuthService {
     try {
       // Verify refresh token
       const payload = this.jwtService.verify(refreshToken, {
-        secret: this.configService.get<string>('jwt.secret'),
+        secret: config().jwt.secret,
       });
 
       // Find user
@@ -261,11 +258,11 @@ export class AuthService {
     };
 
     const accessToken = this.jwtService.sign(payload, {
-      expiresIn: this.configService.get<string>('jwt.expiresIn'),
+      expiresIn: config().jwt.expiresIn,
     });
 
     const refreshToken = this.jwtService.sign(payload, {
-      expiresIn: this.configService.get<string>('jwt.refreshExpiresIn'),
+      expiresIn: config().jwt.refreshExpiresIn,
     });
 
     return {
