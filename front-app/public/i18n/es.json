@@ -27,7 +27,7 @@
     "MESSAGES": {
       "WELCOME": "¡Bienvenido!",
       "LOGIN_SUCCESS": "Has iniciado sesión correctamente",
-      "GOOGLE_LOGIN_SUCCESS": "Hola {name}, has iniciado sesión correctamente",
+      "GOOGLE_LOGIN_SUCCESS": "Hola {{name}}, has iniciado sesión correctamente",
       "AUTH_ERROR": "Error de autenticación",
       "INVALID_CREDENTIALS": "Credenciales inválidas. Por favor, verifica tu email y contraseña",
       "CONFIG_ERROR": "Error de configuración",

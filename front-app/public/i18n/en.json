@@ -27,7 +27,7 @@
     "MESSAGES": {
       "WELCOME": "Welcome!",
       "LOGIN_SUCCESS": "You have successfully logged in",
-      "GOOGLE_LOGIN_SUCCESS": "Hello {name}, you have successfully logged in",
+      "GOOGLE_LOGIN_SUCCESS": "Hello {{name}}, you have successfully logged in",
       "AUTH_ERROR": "Authentication error",
       "INVALID_CREDENTIALS": "Invalid credentials. Please verify your email and password",
       "CONFIG_ERROR": "Configuration error",
